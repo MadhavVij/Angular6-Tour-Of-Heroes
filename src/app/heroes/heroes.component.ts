@@ -10,7 +10,9 @@ import {HeroService} from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
 
-  selectedHero: Hero;
+  //selectedHero: Hero;
+  
+  
   // selectedHero: Hero = {
   //   id:1,
   //   name: 'Windstorm'
@@ -30,10 +32,11 @@ export class HeroesComponent implements OnInit {
     this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
   }
 
-  onSelect(hero:Hero): void{
-    this.selectedHero = hero;
-  }
+  // onSelect(hero:Hero): void{
+  //   this.selectedHero = hero;
+  // }
 
+  
 //  hero = 'Windstorm'
 
 }
